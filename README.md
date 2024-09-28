@@ -11,9 +11,8 @@ This is a project I created to lessen the wait times at the Communal Student Can
 
 
 ## Demo
+![Alt text](demo.png)
 
-
-![PWA Home Screen]("demo.png")
 
 
 This is the link to the Demo and User Testing: https://t.maze.co/286313989
