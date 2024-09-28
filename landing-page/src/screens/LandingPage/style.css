@@ -1,0 +1,466 @@
+.landing-page {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-page .div {
+  background: linear-gradient(180deg, rgb(107, 145, 120) 5.5%, rgb(31.73, 43, 35.59) 94.5%);
+  background-color: rgba(255, 255, 255, 1);
+  height: 932px;
+  overflow: hidden;
+  position: relative;
+  width: 430px;
+}
+
+.landing-page .frame {
+  height: 113px;
+  left: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  position: absolute;
+  top: 174px;
+  width: 420px;
+}
+
+.landing-page .group-wrapper {
+  border-radius: 15px;
+  height: 113px;
+  width: 685px;
+}
+
+.landing-page .group {
+  height: 113px;
+  position: relative;
+}
+
+.landing-page .overlap {
+  height: 113px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 274px;
+}
+
+.landing-page .frame-2 {
+  border-radius: 15px;
+  height: 113px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 155px;
+}
+
+.landing-page .ellipse {
+  height: 79px;
+  left: 24px;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  width: 89px;
+}
+
+.landing-page .text-wrapper {
+  color: #000000;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  height: 24px;
+  left: 30px;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  top: 90px;
+  white-space: nowrap;
+}
+
+.landing-page .frame-3 {
+  height: 113px;
+  left: 137px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 137px;
+}
+
+.landing-page .text-wrapper-2 {
+  color: #000000;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  height: 24px;
+  left: 38px;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  top: 90px;
+  white-space: nowrap;
+}
+
+.landing-page .frame-4 {
+  height: 113px;
+  left: 274px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 137px;
+}
+
+.landing-page .frame-5 {
+  height: 113px;
+  left: 411px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 137px;
+}
+
+.landing-page .text-wrapper-3 {
+  color: #000000;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  height: 24px;
+  left: 52px;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  top: 90px;
+  white-space: nowrap;
+}
+
+.landing-page .frame-6 {
+  height: 113px;
+  left: 548px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 137px;
+}
+
+.landing-page .overlap-group {
+  height: 24px;
+  left: 43px;
+  position: absolute;
+  top: 90px;
+  width: 51px;
+}
+
+.landing-page .text-wrapper-4 {
+  color: #000000;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  height: 24px;
+  left: 0;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.landing-page .search-bar {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 28px;
+  display: flex;
+  gap: 4px;
+  height: 47px;
+  left: 35px;
+  max-width: 720px;
+  overflow: hidden;
+  position: absolute;
+  top: 106px;
+  width: 360px;
+}
+
+.landing-page .state-layer-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 4px;
+  padding: 4px;
+  position: relative;
+}
+
+.landing-page .leading-icon {
+  margin-bottom: -4.5px !important;
+  margin-top: -4.5px !important;
+}
+
+.landing-page .icon-instance-node {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.landing-page .content {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  position: relative;
+}
+
+.landing-page .supporting-text {
+  color: #49454f;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.landing-page .trailing-elements {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  margin-bottom: -4.5px;
+  margin-top: -4.5px;
+  position: relative;
+}
+
+.landing-page .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 257px;
+  letter-spacing: -0.43px;
+  line-height: 22px;
+  position: absolute;
+  text-align: right;
+  top: 578px;
+  white-space: nowrap;
+}
+
+.landing-page .component-1 {
+  height: 230px !important;
+  left: 8px !important;
+  top: 298px !important;
+  width: 413px !important;
+}
+
+.landing-page .rectangle {
+  height: 53px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: 25px;
+  width: 77px;
+}
+
+.landing-page .frame-wrapper {
+  height: 154px;
+  left: 51px;
+  overflow-x: scroll;
+  position: absolute;
+  top: 643px;
+  width: 366px;
+}
+
+.landing-page .div-wrapper {
+  height: 154px;
+  width: 1672px;
+}
+
+.landing-page .group-2 {
+  height: 154px;
+  position: relative;
+  width: 1544px;
+}
+
+.landing-page .frame-7 {
+  background-image: url(../../../static/img/frame-9.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .frame-8 {
+  background-image: url(../../../static/img/frame-10.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 264px;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .frame-9 {
+  background-image: url(../../../static/img/frame-11.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 528px;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .frame-10 {
+  background-image: url(../../../static/img/frame-12.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 792px;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .frame-11 {
+  background-image: url(../../../static/img/frame-13.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 1056px;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .frame-12 {
+  background-image: url(../../../static/img/frame-14.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 154px;
+  left: 1320px;
+  position: absolute;
+  top: 0;
+  width: 224px;
+}
+
+.landing-page .group-3 {
+  height: 99px;
+  left: -16px;
+  position: absolute;
+  top: 839px;
+  width: 454px;
+}
+
+.landing-page .frame-13 {
+  background-color: #ffffff;
+  height: 99px;
+  position: relative;
+}
+
+.landing-page .home {
+  height: 33px !important;
+  left: 56px !important;
+  position: absolute !important;
+  top: 25px !important;
+  width: 33px !important;
+}
+
+.landing-page .shopping-cart {
+  height: 33px !important;
+  left: 153px !important;
+  position: absolute !important;
+  top: 25px !important;
+  width: 33px !important;
+}
+
+.landing-page .help-circle {
+  height: 33px !important;
+  left: 264px !important;
+  position: absolute !important;
+  top: 25px !important;
+  width: 33px !important;
+}
+
+.landing-page .account-circle {
+  height: 33px !important;
+  left: 359px !important;
+  position: absolute !important;
+  top: 25px !important;
+  width: 39px !important;
+}
+
+.landing-page .text-wrapper-6 {
+  color: #000000;
+  font-family: var(--m3-label-medium-prominent-font-family);
+  font-size: var(--m3-label-medium-prominent-font-size);
+  font-style: var(--m3-label-medium-prominent-font-style);
+  font-weight: var(--m3-label-medium-prominent-font-weight);
+  left: 56px;
+  letter-spacing: var(--m3-label-medium-prominent-letter-spacing);
+  line-height: var(--m3-label-medium-prominent-line-height);
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-7 {
+  color: #000000;
+  font-family: var(--m3-label-medium-prominent-font-family);
+  font-size: var(--m3-label-medium-prominent-font-size);
+  font-style: var(--m3-label-medium-prominent-font-style);
+  font-weight: var(--m3-label-medium-prominent-font-weight);
+  left: 160px;
+  letter-spacing: var(--m3-label-medium-prominent-letter-spacing);
+  line-height: var(--m3-label-medium-prominent-line-height);
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-8 {
+  color: #000000;
+  font-family: var(--m3-label-medium-prominent-font-family);
+  font-size: var(--m3-label-medium-prominent-font-size);
+  font-style: var(--m3-label-medium-prominent-font-style);
+  font-weight: var(--m3-label-medium-prominent-font-weight);
+  left: 267px;
+  letter-spacing: var(--m3-label-medium-prominent-letter-spacing);
+  line-height: var(--m3-label-medium-prominent-line-height);
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  white-space: nowrap;
+}
+
+.landing-page .text-wrapper-9 {
+  color: #000000;
+  font-family: var(--m3-label-medium-prominent-font-family);
+  font-size: var(--m3-label-medium-prominent-font-size);
+  font-style: var(--m3-label-medium-prominent-font-style);
+  font-weight: var(--m3-label-medium-prominent-font-weight);
+  left: 355px;
+  letter-spacing: var(--m3-label-medium-prominent-letter-spacing);
+  line-height: var(--m3-label-medium-prominent-line-height);
+  position: absolute;
+  text-align: center;
+  top: 68px;
+  white-space: nowrap;
+}

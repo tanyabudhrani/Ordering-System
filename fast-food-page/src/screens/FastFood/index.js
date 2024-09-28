@@ -1,0 +1,1 @@
+export { FastFood } from "./FastFood";

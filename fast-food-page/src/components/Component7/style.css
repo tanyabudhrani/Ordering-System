@@ -1,0 +1,35 @@
+.component-7 {
+  background-image: url(../../../static/img/rectangle-8-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 145px;
+  width: 189px;
+}
+
+.component-7 .frame-3 {
+  background-color: #00000080;
+  border-radius: 20px;
+  height: 145px;
+}
+
+.component-7 .order-5 {
+  height: 32px;
+  left: 9px;
+  position: relative;
+  top: 113px;
+  width: 170px;
+}
+
+.component-7 .text-wrapper-5 {
+  color: #ffffff;
+  font-family: var(--m3-headline-small-font-family);
+  font-size: var(--m3-headline-small-font-size);
+  font-style: var(--m3-headline-small-font-style);
+  font-weight: var(--m3-headline-small-font-weight);
+  left: 0;
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}

@@ -1,0 +1,35 @@
+.component-6 {
+  background-image: url(../../../static/img/rectangle-6.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 145px;
+  width: 189px;
+}
+
+.component-6 .overlap-group-2 {
+  background-color: #00000080;
+  border-radius: 20px;
+  height: 145px;
+}
+
+.component-6 .order-4 {
+  height: 32px;
+  left: 12px;
+  position: relative;
+  top: 110px;
+  width: 170px;
+}
+
+.component-6 .text-wrapper-4 {
+  color: #ffffff;
+  font-family: var(--m3-headline-small-font-family);
+  font-size: var(--m3-headline-small-font-size);
+  font-style: var(--m3-headline-small-font-style);
+  font-weight: var(--m3-headline-small-font-weight);
+  left: 0;
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  top: -1px;
+  white-space: nowrap;
+}

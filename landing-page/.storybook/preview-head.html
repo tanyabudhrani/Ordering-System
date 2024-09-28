@@ -1,0 +1,196 @@
+<style>
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+  * {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0px;
+    height: 100%;
+  }
+  /* a blue color as a generic focus style */
+  button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  :root {
+    --m3-body-large-font-family: "Roboto", Helvetica;
+    --m3-body-large-font-size: 16px;
+    --m3-body-large-font-style: normal;
+    --m3-body-large-font-weight: 400;
+    --m3-body-large-letter-spacing: 0.5px;
+    --m3-body-large-line-height: 24px;
+    --m3-label-medium-prominent-font-family: "Roboto", Helvetica;
+    --m3-label-medium-prominent-font-size: 12px;
+    --m3-label-medium-prominent-font-style: normal;
+    --m3-label-medium-prominent-font-weight: 600;
+    --m3-label-medium-prominent-letter-spacing: 0.5px;
+    --m3-label-medium-prominent-line-height: 16px;
+    --m3-schemes-on-primary: rgba(255, 255, 255, 1);
+    --m3-schemes-on-surface-variant: rgba(73, 69, 79, 1);
+    --m3-schemes-outline: rgba(121, 116, 126, 1);
+    --m3-schemes-primary: rgba(101, 85, 143, 1);
+    --m3-schemes-secondary-container: rgba(232, 222, 248, 1);
+    --m3-schemes-surface-container-high: rgba(236, 230, 240, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(74, 68, 89, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(74, 68, 89, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(29, 27, 32, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(29, 27, 32, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(73, 69, 79, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(73, 69, 79, 0.12);
+  }
+
+  /*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-m3-mode="light">
+<!-- the rest of your content -->
+</body>
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+  [data-m3-mode="light"] {
+    --m3-schemes-on-primary: rgba(255, 255, 255, 1);
+    --m3-schemes-on-surface-variant: rgba(73, 69, 79, 1);
+    --m3-schemes-outline: rgba(121, 116, 126, 1);
+    --m3-schemes-primary: rgba(101, 85, 143, 1);
+    --m3-schemes-secondary-container: rgba(232, 222, 248, 1);
+    --m3-schemes-surface-container-high: rgba(236, 230, 240, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(74, 68, 89, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(74, 68, 89, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(29, 27, 32, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(29, 27, 32, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(73, 69, 79, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(73, 69, 79, 0.12);
+  }
+
+  [data-m3-mode="light-high-contrast"] {
+    --m3-schemes-on-primary: rgba(255, 255, 255, 1);
+    --m3-schemes-on-surface-variant: rgba(37, 35, 43, 1);
+    --m3-schemes-outline: rgba(69, 65, 74, 1);
+    --m3-schemes-primary: rgba(39, 23, 78, 1);
+    --m3-schemes-secondary-container: rgba(73, 57, 113, 1);
+    --m3-schemes-surface-container-high: rgba(236, 230, 238, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(0, 0, 0, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(0, 0, 0, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(37, 35, 43, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(37, 35, 43, 0.12);
+  }
+
+  [data-m3-mode="light-medium-contrast"] {
+    --m3-schemes-on-primary: rgba(255, 255, 255, 1);
+    --m3-schemes-on-surface-variant: rgba(69, 65, 74, 1);
+    --m3-schemes-outline: rgba(97, 93, 103, 1);
+    --m3-schemes-primary: rgba(73, 57, 113, 1);
+    --m3-schemes-secondary-container: rgba(124, 107, 167, 1);
+    --m3-schemes-surface-container-high: rgba(236, 230, 238, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(29, 27, 32, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(29, 27, 32, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(69, 65, 74, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(69, 65, 74, 0.12);
+  }
+
+  [data-m3-mode="dark"] {
+    --m3-schemes-on-primary: rgba(56, 30, 114, 1);
+    --m3-schemes-on-surface-variant: rgba(202, 196, 208, 1);
+    --m3-schemes-outline: rgba(147, 143, 153, 1);
+    --m3-schemes-primary: rgba(208, 188, 254, 1);
+    --m3-schemes-secondary-container: rgba(74, 68, 88, 1);
+    --m3-schemes-surface-container-high: rgba(43, 41, 48, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(56, 30, 114, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(56, 30, 114, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(232, 222, 248, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(232, 222, 248, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(230, 224, 233, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(230, 224, 233, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(202, 196, 208, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(202, 196, 208, 0.12);
+  }
+
+  [data-m3-mode="dark-high-contrast"] {
+    --m3-schemes-on-primary: rgba(0, 0, 0, 1);
+    --m3-schemes-on-surface-variant: rgba(255, 249, 255, 1);
+    --m3-schemes-outline: rgba(206, 200, 212, 1);
+    --m3-schemes-primary: rgba(255, 249, 255, 1);
+    --m3-schemes-secondary-container: rgba(211, 193, 255, 1);
+    --m3-schemes-surface-container-high: rgba(43, 41, 47, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(0, 0, 0, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(0, 0, 0, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(0, 0, 0, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(0, 0, 0, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(255, 255, 255, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(255, 255, 255, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(255, 249, 255, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(255, 249, 255, 0.12);
+  }
+
+  [data-m3-mode="dark-medium-contrast"] {
+    --m3-schemes-on-primary: rgba(27, 9, 66, 1);
+    --m3-schemes-on-surface-variant: rgba(206, 200, 212, 1);
+    --m3-schemes-outline: rgba(166, 161, 171, 1);
+    --m3-schemes-primary: rgba(211, 193, 255, 1);
+    --m3-schemes-secondary-container: rgba(152, 135, 197, 1);
+    --m3-schemes-surface-container-high: rgba(43, 41, 47, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(27, 9, 66, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(27, 9, 66, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(0, 0, 0, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(0, 0, 0, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(255, 249, 255, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(255, 249, 255, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(206, 200, 212, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(206, 200, 212, 0.12);
+  }
+
+  [data-m3-mode="monochrome-light"] {
+    --m3-schemes-on-primary: rgba(226, 226, 226, 1);
+    --m3-schemes-on-surface-variant: rgba(71, 71, 71, 1);
+    --m3-schemes-outline: rgba(119, 119, 119, 1);
+    --m3-schemes-primary: rgba(0, 0, 0, 1);
+    --m3-schemes-secondary-container: rgba(212, 212, 212, 1);
+    --m3-schemes-surface-container-high: rgba(232, 232, 232, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(226, 226, 226, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(226, 226, 226, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(27, 27, 27, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(27, 27, 27, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(27, 27, 27, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(27, 27, 27, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(71, 71, 71, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(71, 71, 71, 0.12);
+  }
+
+  [data-m3-mode="monochrome-dark"] {
+    --m3-schemes-on-primary: rgba(26, 28, 28, 1);
+    --m3-schemes-on-surface-variant: rgba(198, 198, 198, 1);
+    --m3-schemes-outline: rgba(145, 145, 145, 1);
+    --m3-schemes-primary: rgba(255, 255, 255, 1);
+    --m3-schemes-secondary-container: rgba(71, 71, 71, 1);
+    --m3-schemes-surface-container-high: rgba(42, 42, 42, 1);
+    --m3-state-layers-on-primary-opacity-08: rgba(26, 28, 28, 0.08);
+    --m3-state-layers-on-primary-opacity-12: rgba(26, 28, 28, 0.12);
+    --m3-state-layers-on-secondary-container-opacity-08: rgba(226, 226, 226, 0.08);
+    --m3-state-layers-on-secondary-container-opacity-12: rgba(226, 226, 226, 0.12);
+    --m3-state-layers-on-surface-opacity-08: rgba(226, 226, 226, 0.08);
+    --m3-state-layers-on-surface-opacity-12: rgba(226, 226, 226, 0.12);
+    --m3-state-layers-on-surface-variant-opacity-08: rgba(198, 198, 198, 0.08);
+    --m3-state-layers-on-surface-variant-opacity-12: rgba(198, 198, 198, 0.12);
+  }
+</style>
